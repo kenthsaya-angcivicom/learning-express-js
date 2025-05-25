@@ -1,0 +1,1 @@
+[![Testing Express App](https://github.com/kenthsaya-angcivicom/learning-express-js/actions/workflows/test.yml/badge.svg)](https://github.com/kenthsaya-angcivicom/learning-express-js/actions/workflows/test.yml)
