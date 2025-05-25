@@ -10,6 +10,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run tests and generate CTRF report    
-        run: mocha dist/test/**/*.test.js --reporter mocha-ctrf-reporter --reporter-options output=ctrf/ctrf-report.json
+        run: npx mocha dist/test/**/*.test.js --reporter mocha-ctrf-reporter --reporter-options output=ctrf/ctrf-report.json
       - name: Publish Test Summary Results
         run: npx github-actions-ctrf ctrf/ctrf-report.json
