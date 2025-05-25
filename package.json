@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc && mocha dist/test/**/*.test.js",
     "build": "tsc",
     "start": "tsc && node dist/app.js",
     "dev": "tsc-watch --onSuccess \"node dist/app.js\"",
     "dev:chat": "tsc-watch --onSuccess \"node dist/chat.js\""
-  },
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,12 +23,16 @@
     "tsc-watch": "^6.2.1"
   },
   "devDependencies": {
+    "@types/chai": "^5.2.2",
     "@types/express": "^5.0.1",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^22.15.3",
     "@types/pdfkit": "^0.13.9",
+    "chai": "^5.2.0",
     "dotenv": "^16.5.0",
     "eslint": "^9.25.1",
     "install": "^0.13.0",
+    "mocha": "^11.5.0",
     "nodemon": "^3.1.10",
     "npm": "^11.3.0",
     "prettier": "^3.5.3",
